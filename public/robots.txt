@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rentout.co/sitemap.xml
