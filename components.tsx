@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { ArrowDown, ArrowRight, ArrowUpRight, BadgeCheck, BedDouble, Check, ChevronDown, CircleCheck, Clock3, Home, House, KeyRound, MapPin, Menu, MessageCircle, MessageSquareText, Search, ShieldCheck, Sparkles, Users, X, Zap } from "lucide-react";
 
-const reveal = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: .55, ease: [.22, 1, .36, 1] } } };
+const reveal: Variants = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { duration: .55, ease: [.22, 1, .36, 1] } } };
 
 export function RentoutLogo() { return <Link href="#home" className="brand" aria-label="Rentout home"><span className="brand-mark">R<span /></span><span>rentout</span></Link>; }
 
